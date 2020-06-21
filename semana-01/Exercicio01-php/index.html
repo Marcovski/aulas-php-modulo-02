@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="unsemantic-grid-responsive.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <main>
+        <div class="backg">
+            <h2><i class='far fa-id-card' style='font-size:48px;color:rgb(92, 246, 164)'></i> Cadastre-se </h2>
+            <form action="contato.php" method="post" class="form" id="formCadastro">
+
+                <div class="grid-50 mobile-grid-100">
+                    <label for="txtNome"> <i class='far fa-user i2' style='font-size:23px;'></i> Nome</label>
+                    <input type="text" name="txtNome" id="txtNome" placeholder="Nome"><br>
+                    <small id="1">
+                        *Adicione um nome válido.
+                    </small>
+
+                    <label for="txtTel"><i class='fas fa-phone-square-alt ' style='font-size:23px;'></i> Telefone</label>
+                    <input type="tel" name="txtTel" id="txtTel" placeholder="(xx)xxxx-xxxx"><br>
+                    <small id="2">
+                        *Digite um telefone válido.
+                    </small>
+                </div>
+                <div class="grid-50 mobile-grid-100">
+                    <label for="txtEmail"><i class='far fa-envelope ' style='font-size:23px;'></i> Email</label>
+                    <input type="email" name="txtEmail" id="txtEmail" placeholder="Email@gmail.com"><br>
+                    <small id="3">
+                        *Digite um email válido.
+                    </small><br>
+                    <div class="assuntos">
+                        <i class='fa fa-sort-amount-asc i2' style='font-size:16px;'></i> Assuntos <br>
+                        <select class="grid-100 mobile-grid-100" name="slAssunto" id="slAssunto">
+                            <option value="1">Comercial</option>
+                            <option value="2">Dúvidas</option>
+                            <option value="3">Parceria</option>
+                            <option value="4">Outros</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="grid-100 mobile-grid-100">
+                    <h2><i class='far fa-comments' style='font-size:30px'></i>Mensagem</h2>
+                    <textarea name="txtMensagem" class="grid-100 mobile-grid-100" id="txtMensagem" rows="5"
+                        placeholder="Texto."></textarea><br>
+                        <small>
+                            *Informe aqui o motivo de seu contato.
+                        </small>
+                </div>
+                <div class="grid-100 mobile-grid-100">
+                    <input type="submit" value="Cadastrar" class="botao" id="botao">
+                </div>
+        </div>
+        </form>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
