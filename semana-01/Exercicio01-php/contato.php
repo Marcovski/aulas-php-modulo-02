@@ -120,6 +120,7 @@ function validar($nome, $telefone, $email, $mensagem)
                 <li>O campo "nome" deve conter mais de 2 caracteres.</li>
                 <li>O campo "email" deve conter um conteúdo similar a: Exemplo@Contato.com</li>
                 <li>O campo "Telefone" deve conter somente números.</li>
+                <li>O campo "mensagem" deve estar preenchido com no minimo 11(onze) caracteres.</li>
             </ul>
             <p><a href="index.html">Clique aqui</a> para voltar e preencher novamente o formulário.</p>
         <?php endif; ?>
