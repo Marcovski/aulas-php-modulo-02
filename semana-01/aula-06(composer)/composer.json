@@ -1,0 +1,7 @@
+{
+    "name": "rodrigues-marcos/aula-06",
+    "description": "Projeto sobre php",
+    "require": {
+        "phpmailer/phpmailer": "^6.1"
+         }
+}
