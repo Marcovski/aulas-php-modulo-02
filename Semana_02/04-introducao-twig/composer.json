@@ -1,0 +1,17 @@
+{
+    "name": "rodrigues/04-introducao-twig",
+    "authors": [
+        {
+            "name": "Marcos Rodrigues",
+            "email": "marcos-jr-rodrig@outlook.com"
+        }
+    ],
+    "require": {
+        "twig/twig": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "app\\" : "app/"
+        }
+    }
+}
