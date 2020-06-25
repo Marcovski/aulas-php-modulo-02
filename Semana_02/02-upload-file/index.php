@@ -48,7 +48,6 @@ if (isset($_FILES['arquivos'])) {
     if ($rename) {
         $ex = explode('.', $file['name']);//quebra o nome onde houver pontos
         $name = md5(date('d/m/Y/His')) . '.' . end($ex);//pega a ultima string q tem depois do ultimo ponto
-        die($name);
     }
 
     move_uploaded_file($_FILES['arquivos']['tmp_name'], $path . $name);

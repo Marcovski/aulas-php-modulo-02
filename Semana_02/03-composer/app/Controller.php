@@ -7,10 +7,10 @@ class Controller
     function view($view, $params = [])
     {
         $loader = new \Twig\Loader\FilesystemLoader('view/');
-$twig = new \Twig\Environment($loader, [
-    //'cache' => 'cache/',
-]);
+        $twig = new \Twig\Environment($loader, [
+            //'cache' => 'cache/',
+        ]);
 
-echo $twig->render($view, $params);
+        echo $twig->render($view, $params);
     }
 }
